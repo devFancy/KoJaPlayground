@@ -30,6 +30,7 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework:spring-web:5.3.30'
 	implementation 'org.springframework:spring-core:5.3.30'
 
@@ -42,6 +43,9 @@ dependencies {
 	implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8" // kotlin (2)
 	implementation 'org.jetbrains.kotlin:kotlin-reflect:1.6.21' // kotlin reflection
 	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3' // json - kotlin module 추가
+
+	// h2
+	runtimeOnly 'com.h2database:h2'
 }
 
 tasks.named('test') {
